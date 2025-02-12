@@ -9,6 +9,7 @@ import {
 import { getFirestore, doc, getDoc, setDoc } from "firebase/firestore";
 
 // Your web app's Firebase configuration
+// TODO: Move this to a .env file
 const firebaseConfig = {
   apiKey: "AIzaSyAga1Ot8tXlFM2LM4-sY5y9mYCUotNgc08",
   authDomain: "crwn-clothing-db-60219.firebaseapp.com",
