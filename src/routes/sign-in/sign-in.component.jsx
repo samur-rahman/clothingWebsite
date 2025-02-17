@@ -33,10 +33,10 @@ const SignIn = () => {
     <div>
       <h1>This is Sign In page.</h1>
       <button onClick={logGoogleUser}> Sign In with Google popup.</button>
-      <button onClick={signInWithGoogleRedirect}>
+      {/* <button onClick={signInWithGoogleRedirect}>
         {" "}
         Sign In with Google Redirect.
-      </button>
+      </button> */}
       <SignUpForm />
     </div>
   );
