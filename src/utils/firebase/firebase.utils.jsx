@@ -5,7 +5,7 @@ import {
   signInWithPopup,
   GoogleAuthProvider,
   createUserWithEmailAndPassword,
-  signInWithEmailAndPassword
+  signInWithEmailAndPassword,
 } from "firebase/auth";
 
 import { getFirestore, doc, getDoc, setDoc } from "firebase/firestore";
@@ -13,12 +13,12 @@ import { getFirestore, doc, getDoc, setDoc } from "firebase/firestore";
 // Your web app's Firebase configuration
 // TODO: Move this to a .env file
 const firebaseConfig = {
-  apiKey: "AIzaSyAga1Ot8tXlFM2LM4-sY5y9mYCUotNgc08",
-  authDomain: "crwn-clothing-db-60219.firebaseapp.com",
-  projectId: "crwn-clothing-db-60219",
-  storageBucket: "crwn-clothing-db-60219.appspot.com",
-  messagingSenderId: "385733579767",
-  appId: "1:385733579767:web:e7fe978349cbb7eb8754f2",
+  apiKey: process.env.API_KEY,
+  authDomain: process.env.AUTH_DOMAIN,
+  projectId: process.env.PROJECT_ID,
+  storageBucket: process.env.STORAGE_BUCKET,
+  messagingSenderId: process.env.MESSAGING_SENDER_ID,
+  appId: process.env.APP_ID,
 };
 
 // Initialize Firebase
